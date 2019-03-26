@@ -1,0 +1,14 @@
+# For idea
+**/out
+.idea
+*.iml
+*.ipr
+*.iws
+
+# For Gradle
+**/build
+build/**
+.gradle
+
+# For mac
+.DS_Store

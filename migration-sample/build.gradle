@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'org.flywaydb.flyway'
+
+apply from: "datasource/${env}/configuration.gradle"
+
+flyway {
+    driver = 'org.postgresql.Driver'
+    url = database.url
+    user = database.user
+    password = database.password
+//    locations = ['filesystem:migration/basic',"filesystem:migration/${env}"]
+}

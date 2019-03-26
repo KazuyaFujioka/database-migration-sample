@@ -1,0 +1,7 @@
+ext {
+    database = [
+        user: "postgres",
+        password: "secret",
+        url: "jdbc:postgresql://localhost:5432/sample"
+    ]
+}
